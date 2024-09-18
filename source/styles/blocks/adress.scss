@@ -1,5 +1,6 @@
 .adress {
-
+  display: flex;
+  padding: 26px 20px;
 }
 
 .adress__title {
@@ -10,6 +11,7 @@
 }
 
 .adress__text {
+  font-style: normal;
   font-family: $primary-font;
   font-size: 14px;
   line-height: 20px;

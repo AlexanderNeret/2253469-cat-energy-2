@@ -2,6 +2,7 @@
 }
 
 .main-footer__wrapper {
+  padding: 0 20px;
   display: flex;
 
   @media (min-width: $mobile-width) {
@@ -22,12 +23,33 @@
 }
 
 .main-footer__social {
-  padding: 0;
+  padding: 0 96px 40px;
   justify-content: space-between;
   display: flex;
   gap: 24px;
   margin: 0;
   list-style-type: none;
+  position: relative;
+
+  &::before,
+  &::after  {
+   content: "";
+   display: block;
+   height: 1px;
+   background-color: #d9d9d9;
+   width: 280px;
+   position: absolute;
+  }
+
+  &::before {
+    top: 40px;
+    left: 20px;
+  }
+
+  &::after {
+    bottom: 80px;
+    left: 20px;
+  }
 }
 
 .main-footer__social-link {
@@ -70,6 +92,7 @@
 }
 
 .main-footer__academy-logo {
+  padding: 0 20px 40px;
   display: flex;
   justify-content: space-between;
   text-decoration: none;

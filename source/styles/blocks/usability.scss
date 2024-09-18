@@ -1,5 +1,6 @@
 .usability {
   color: $dark-grey;
+  padding: 20px 20px 50px;
 }
 
 .usability__wrapper {
@@ -7,6 +8,7 @@
 }
 
 .usability__tittle {
+  margin: 0;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -31,23 +33,24 @@
 }
 
 .usability__item {
-  padding-bottom: 24px;
-  padding-top: 42px;
+  padding: 40px 0 24px 0;
   font-family: $primary-font;
   font-size: 14px;
   line-height: 18px;
   position: relative;
+  display: flex;
+  align-items: center;
 
   &--leaf::before,
   &--powder::before,
   &--cutlery::before,
   &--clock::before {
     content: "";
-    mask-image: url("../../icons/stack.svg#square-background");
-    width: 60px;
+    width: 122px;
     height: 60px;
     display: inline-block;
     background-color: $basic-green;
+    margin-right: 20px;
   }
 
   &--leaf::after {
@@ -90,7 +93,7 @@
     position: absolute;
     width: 26px;
     height: 30px;
-    top: 57px;
+    top: 55px;
     left: 18px;
   }
 

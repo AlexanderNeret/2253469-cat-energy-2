@@ -1,1 +1,10 @@
-.image-logo {}
+.image-logo {
+  margin: 23px 65px 0 0;
+}
+
+.image-logo--footer {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 40px 90px;
+}

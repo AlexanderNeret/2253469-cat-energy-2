@@ -8,12 +8,19 @@
 }
 
 .welcome__wrapper {
-
+  margin-bottom: 200px;
+  position: relative;
+  width: 320px;
+  min-height: 305px;
+  background-color: $basic-green;
 }
 
 .welcome__tittle {
+  text-align: center;
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
+    padding: 25px 35px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -23,6 +30,7 @@
 }
 
 .welcome__slogan {
+  text-align: center;
   font-size: 14px;
   line-height: 14px;
 
@@ -33,7 +41,9 @@
 }
 
 .welcome__image-can {
-
+  top: 470px;
+  left: 24px;
+position: absolute;
 }
 
 .welcome__choose-programm {
@@ -42,4 +52,10 @@
   text-decoration: none;
   list-style-type: none;
   color: $white;
+  background-color: $basic-green;
+  padding: 10px 63px;
+  display: block;
+  text-align: center;
+  margin: 0 20px 20px 20px;
+  text-transform: uppercase;
 }

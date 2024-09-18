@@ -14,6 +14,7 @@
 
 <body class="page__body">
   <header class="main-header">
+  <div class="main-header__wrapper">
     <a class="main-header__logo" href="#">
       <picture>
         <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-desktop.svg" width="70" height="59">
@@ -22,23 +23,25 @@
       </picture>
       <img class="image-logo" src="images/main-logo-mobile.svg" width="101" height="18" alt="Главный логотип">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toogle" type="button">
+        <span class="main-nav__burger"></span>
         <span class="visually-hidden">Открыть меню</span>
       </button>
+  </div>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li>
+          <li class="site-list__item">
             <a class="site-list__link" href="index.html" aria-current="page">
               Главная
             </a>
           </li>
-          <li>
+          <li class="site-list__item">
             <a class="site-list__link site-list__link--current" href="#">
               Каталог Продукции
             </a>
           </li>
-          <li>
+          <li class="site-list__item">
             <a class="site-list__link button" href="#">
               Подбор Программы
             </a>
@@ -52,7 +55,6 @@
     <section class="product-cards">
       <h1 class="product-cards__title">Каталог Продукции</h1>
       <div class="product-cards__wrapper">
-        <h1 class="product-cards__title">Каталог Продукции</h1>
         <article class="product-cards__item">
           <a class="product-cards-__picture-link" href="#">
             <picture>
@@ -279,40 +281,8 @@
         </form>
       </div>
     </section>
-        <b class="adress__tittle">приглашаем к сотрудничеству дилеров!</b>
-        <p class="adress__text">ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург</p>
-        <img class="adress__map" src="images/adress-map.png" width="320" height="362" alt="Расположение на карте">
-      </div>
-      <div class="main-footer__wrapper">
-        <a class="main-footer__logo" href="#">
-          <img class="image-logo" src="images/main-logo.png" width="128" height="24" alt="Главный логотип">
-        </a>
-        <ul class="main-footer__social">
-          <li>
-            <a class="main-footer__social-link" href="#">
-              <span class="visually-hidden">Логотип Вконтакте</span>
-            </a>
-          </li>
-          <li>
-            <a class="main-footer__social-link" href="#">
-              <span class="visually-hidden">Логотип Ютуб</span>
-            </a>
-          </li>
-          <li>
-            <a class="main-footer__social-link" href="#">
-              <span class="visually-hidden">Логотип телеграмм</span>
-            </a>
-          </li>
-        </ul>
-        <a class="main-footer__academy-logo" href="https://htmlacademy.ru/">
-          <span class="main-footer__academy-title">HTML Academy</span>
-          <img class="academy-logo" src="images/academy-logo-.svg" width="27" height="34" alt="Логотип Академии">
-        </a>
-      </div>
-    </footer>
   </main>
-  {% include 'njk/footer.njk'%}
+</body>
+{% include 'njk/footer.njk'%}
 
 </html>
