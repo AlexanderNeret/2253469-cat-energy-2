@@ -1,45 +1,60 @@
 .show-more {
+  padding: 0 20px 25px;
+  position: relative;
 
+  &::after {
+    content: "";
+    display: block;
+    width: 320px;
+    height: 1px;
+    background-color: #d9d9dd;
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+  }
 }
 
 .show-more__title {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
+  padding-top: 60px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../../icons/icon-plus.svg");
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 105px;
+  }
 }
 
 .show-more__discription {
+  text-align: center;
   font-family: $primary-font;
   font-size: 12px;
   line-height: 16px;
   color: $dark-grey;
+  margin: 0;
+  padding-top: 8px;
 }
 
 .show-more__button {
+  background-color: $bg-color;
   text-decoration: none;
   color: $dark-grey;
+  text-align: center;
+  padding: 10px 75px;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  margin-top: 20px;
 }
 
-.show-more {
-
-}
-
-.show-more__title {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #111111;
-}
-
-.show-more__discription {
-  font-family: $primary-font;
-  font-size: 12px;
-  line-height: 16px;
-  color: #444444;
-}
-
-.show-more__button {
-  text-decoration: none;
-  color: #444444;
-}

@@ -1,18 +1,35 @@
 .actions {
   color: #000000;
+  padding: 40px 20px;
 }
 
 .actions__wrapper {
 
 }
 
-.actions__title {
+.actions__tittle {
+  margin: 0;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 108px;
+    height: 2px;
+    background-color: $basic-green;
+    position: absolute;
+    right: -20px;
+    top: 12px;
+  }
 }
 
 .actions__discription {
+  margin: 0;
+  padding: 32px 0 24px;
+  text-align: center;
   font-size: 16px;
   line-height: 24px;
 }
@@ -22,11 +39,19 @@
 }
 
 .actions__field-subscribe {
+  width: 254px;
+  text-transform: uppercase;
+  padding: 13px;
   font-size: 20px;
   line-height: 30px;
   color: #444444;
+  margin-bottom: 15px;
 }
 
 .actions__following-button {
-
+  color: $white;
+  border: none;
+  padding: 15px 81px;
+  text-transform: uppercase;
+  margin: 0 auto;
 }
