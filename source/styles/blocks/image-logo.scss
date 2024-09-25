@@ -1,5 +1,9 @@
 .image-logo {
   margin-left: 55px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 13px;
+  }
 }
 
 .image-logo--footer {
@@ -7,4 +11,8 @@
   display: flex;
   justify-content: center;
   padding: 40px 90px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }

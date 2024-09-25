@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% set idPage = "index" %}
 <html class="page" lang="ru">
 
 <head>
@@ -25,10 +26,10 @@
         <img class="image-logo" src="images/main-logo-mobile.svg" width="101" height="18" alt="Главный логотип">
       </a>
     </div>
-    <button class="main-nav__toggle" type="button">
+    <button class="main-nav__toggle main-nav__toggle--burger" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+    <nav class="main-nav no-js">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link  site-list__link--current" href="index.html" aria-current="page">
@@ -109,7 +110,7 @@
             </span>
           </li>
           <li class="usability__item usability__item--clock">
-            <p class="usability__discription">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <span class="usability__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</span>
           </li>
 
         </ol>
@@ -119,17 +120,19 @@
     <section class="example">
       <h2 class="example__tittle">Живой пример</h2>
       <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <ul class="example__list">
-        <li class="example__item">
-          <span class="example__number">5 КГ</span>
-          <span class="example__discription">Снижение веса</span>
-        </li>
-        <li class="example__item">
-          <span class="example__number example__number--current">60 Дней</span>
-          <span class="example__discription">Затрачено времени</span>
-        </li>
-      </ul>
-      <span class="example__commentary">Затраты на питание: 15 000 РУБ.</span>
+      <div class="example__container">
+        <ul class="example__list">
+          <li class="example__item">
+            <span class="example__number">5 КГ</span>
+            <span class="example__discription">Снижение веса</span>
+          </li>
+          <li class="example__item">
+            <span class="example__number example__number--current">60 Дней</span>
+            <span class="example__discription example__discription--current">Затрачено времени</span>
+          </li>
+        </ul>
+        <span class="example__commentary">Затраты на питание: 15 000 РУБ.</span>
+      </div>
       <div class="example__slider">
         <picture>
           <source media="(min-width: 768px)" srcset="images/fat-cat-tablet@1x.png 1x, images/fat-cat-tablet@2x.png 2x" width="560" height="512" type="image/png">
@@ -143,7 +146,7 @@
     </section>
   </main>
 
-  <script src="/source/scripts/index.js"></script>
+  <script src="./scripts/index.js"></script>
 </body>
 {% include 'njk/footer.njk'%}
 

@@ -1,6 +1,10 @@
 .adress {
   display: flex;
-  padding: 26px 20px;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    gap: 310px;
+  }
 }
 
 .adress__title {
@@ -8,6 +12,11 @@
   font-size: 16px;
   line-height: 20px;
   color: #111111;
+  padding: 26px 0 20px 26px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0 60px 70px;
+  }
 }
 
 .adress__text {
@@ -16,4 +25,9 @@
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+  padding: 26px  20px 26px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px  60px 70px 0;
+  }
 }

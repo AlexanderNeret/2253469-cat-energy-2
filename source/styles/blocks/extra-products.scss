@@ -1,5 +1,9 @@
 .extra-products {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px;
+  }
 }
 
 .extra-products__wrapper {
@@ -33,17 +37,32 @@
   &::after {
     content: "";
     display: block;
-    width: 320px;
+    width: 280px;
     height: 1px;
     background-color: #d9d9dd;
     position: absolute;
     bottom: 15px;
-    left: -20px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
+    padding: 0 30px 80px;
+    background-color: $white;
+    width: 300px;
+    text-wrap: nowrap;
+
+    &::before {
+      width: 768px;
+      right: -30px;
+      top: 16px;
+      z-index: -1;
+      left: -30px;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -59,6 +78,10 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-direction: column;
+    border: 1px solid #cdcdcd;
+    padding: 28px 38px;
+    row-gap: 54px;
   }
 }
 
@@ -69,16 +92,24 @@
   &::after {
     content: "";
     display: block;
-    width: 320px;
+    width: 280px;
     height: 1px;
     background-color: #d9d9dd;
     position: absolute;
     bottom: 10px;
-    left: -20px;
   }
 
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &::after {
+      width: 707px;
+      left: -38px;
+      bottom: -28px;
+    }
   }
 }
 
@@ -99,6 +130,10 @@
   display: flex;
   justify-content: space-between;
   padding: 15px 0;
+
+  @media (min-width: $tablet-width) {
+    gap: 50px;
+  }
 }
 
 .extra-products__discription {
@@ -131,14 +166,42 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 285px;
+  }
 }
 
 .extra-products__order {
   margin-top: 20px;
-  background-color: $basic-green;
+  background-image: url("../../images/cat-cage-background.png");
   min-height: 290px;
   display: flex;
   justify-content: center;
+  position: relative;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    display: block;
+    background-color: $basic-green;
+    opacity: 85%;
+    width: 280px;
+    height: 290px;
+    position: absolute;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    min-height: 200px;
+    margin-top: 70px;
+    flex-direction: column;
+
+    &::before {
+      width: 708px;
+      height: 200px;
+    }
+  }
 }
 
 .extra-products__order-text {
@@ -161,5 +224,14 @@
     height: 80px;
     top: 60px;
     left: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 70px 125px 70px 420px;
+    text-align: left;
+
+    &::before {
+      left: 60px;
+    }
   }
 }

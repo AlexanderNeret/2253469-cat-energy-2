@@ -4,6 +4,10 @@
 
 .advantages__wrapper {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 45px;
+  }
 }
 
 .advantages__list {
@@ -47,6 +51,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 77px 0 24px 53px;
+
     &::before,
     &::after {
       display: none;
@@ -100,6 +106,9 @@
       display: inline-block;
       background-color: $basic-green;
       mask-image: url("../../icons/stack.svg#circle-background");
+      position: absolute;
+      top: 80px;
+      right: 63px;
     }
 
     &--weightless::before {
@@ -108,8 +117,8 @@
       background-color: $black;
       mask-image: url("../../icons/stack.svg#black-cat");
       position: absolute;
-      left: 25px;
-      bottom: 25px;
+      top: 69px;
+      right: 91px;
       z-index: 1;
       width: 140px;
       height: 194px;
@@ -121,8 +130,8 @@
       background-color: $black;
       mask-image: url("../../icons/stack.svg#black-pantere");
       position: absolute;
-      bottom: 42px;
-      left: -28px;
+      top: 135px;
+      right: 24px;
       z-index: 1;
       width: 268px;
       height: 112px;
@@ -180,6 +189,12 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    padding: 0 53px 53px;
+    width: 340px;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -206,5 +221,9 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 0 0 53px 53px;
+    width: 165px;
+    display: flex;
+    align-items: center;
   }
 }
