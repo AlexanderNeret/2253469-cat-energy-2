@@ -1,7 +1,5 @@
 .main-header {
-  display: flex;
   width: 320px;
-  flex-wrap: wrap;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -15,8 +13,19 @@
   }
 }
 
+.main-header__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .main-header__wrapper {
-  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  position: relative;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -27,7 +36,6 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  padding: 15px 0;
 }
 
 .main-header__logo-picture {

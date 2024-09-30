@@ -9,12 +9,11 @@
 }
 
 .example__tittle {
-  margin: 0;
+  margin: 0 0 40px;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: $black;
-  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -28,8 +27,7 @@
   font-size: 14px;
   line-height: 18px;
   color: $dark-grey;
-  margin: 0;
-  padding-bottom: 20px;
+  margin: 0 0 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -48,10 +46,10 @@
 
 .example__list {
   list-style-type: none;
-  margin: 0;
-  padding: 0 0 34px;
+  margin: 0 0 34px;
   display: flex;
   justify-content: space-between;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     gap: 43px;
@@ -126,6 +124,8 @@
   font-size: 14px;
   line-height: 20px;
   color: $black;
+  text-align: center;
+  display: block;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

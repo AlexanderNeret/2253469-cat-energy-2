@@ -1,6 +1,6 @@
 .actions {
   color: #000000;
-  padding: 40px 20px;
+  padding: 40px 0;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -8,28 +8,49 @@
 }
 
 .actions__wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
   }
 }
 
 .actions__tittle {
-  margin: 0;
+  margin: 0 0 32px;
+  padding: 0 40px 0 20px;
+  background-color: $white;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   position: relative;
+  z-index: 0;
 
-  &::after {
+  &::before {
     content: "";
     display: block;
-    width: 108px;
+    width: 100vh;
     height: 2px;
     background-color: $basic-green;
     position: absolute;
     right: -20px;
     top: 12px;
+    z-index: -1;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    z-index: -1;
+    width: calc(100% - 20px);
+    height: 100%;
+    background: $white;
+  }
+
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
@@ -49,8 +70,7 @@
 }
 
 .actions__discription {
-  margin: 0;
-  padding: 32px 0 24px;
+  margin: 0 0 24px;
   text-align: center;
   font-size: 16px;
   line-height: 24px;

@@ -1,11 +1,11 @@
 .show-more {
-  padding: 0 20px 25px;
+  padding: 60px 20px 25px;
   position: relative;
 
   &::after {
     content: "";
     display: block;
-    width: 320px;
+    width: 100vh;
     height: 1px;
     background-color: #d9d9dd;
     position: absolute;
@@ -31,7 +31,6 @@
   font-size: 16px;
   line-height: 20px;
   color: #111111;
-  padding-top: 60px;
   position: relative;
 
   &::before {
@@ -41,7 +40,7 @@
     width: 30px;
     height: 30px;
     position: absolute;
-    top: 0;
+    top: -55px;
     right: 105px;
   }
 

@@ -11,10 +11,11 @@
 .welcome__wrapper {
   width: 320px;
   min-height: 305px;
-  background-size: 320px 305px;
   z-index: -1;
   position: relative;
   background-image: url("../../images/background-image-cat.png");
+  background-size: cover;
+  background-color: #434247;
 
   &::before {
     content: "";
@@ -28,6 +29,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    background-color: $white;
     background-image: none;
     display: flex;
     flex-direction: column;
@@ -72,7 +74,8 @@
 }
 
 .welcome__image-can {
-  margin: -143px 0 0 20px;
+  margin: -143px auto 0;
+  display: block;
 
   @media (min-width: $tablet-width) {
     margin-top: -20px;

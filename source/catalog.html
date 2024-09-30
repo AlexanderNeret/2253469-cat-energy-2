@@ -24,11 +24,12 @@
         </picture>
         <img class="image-logo" src="images/main-logo-mobile.svg" width="101" height="18" alt="Главный логотип">
       </a>
+      <button class="main-nav__toggle main-nav__toggle--burger" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
     </div>
-    <button class="main-nav__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+    <nav class="main-nav no-js">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link  site-list__link--current" href="index.html" aria-current="page">
@@ -230,8 +231,8 @@
       </div>
     </section>
     <section class="extra-products">
+      <h2 class="extra-products__title">Дополнительные товары</h2>
       <div class="extra-products__wrapper">
-        <h2 class="extra-products__title">Дополнительные товары</h2>
         <ul class="extra-products__list">
           <li class="extra-products__item">
             <h3 class="extra-products__text">Сахарозаменитель</h3>
@@ -272,9 +273,9 @@
       </div>
     </section>
     <section class="actions">
+      <h2 class="actions__tittle">Акции и новинки</h2>
+      <p class="actions__discription">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <div class="actions__wrapper">
-        <h2 class="actions__tittle">Акции и новинки</h2>
-        <p class="actions__discription">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="actions__following-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="field-subscribe">Подписаться</label>
           <input class="actions__field-subscribe" placeholder="кuklachev@gmail.com" type="email" name="field-subscribe" id="field-subscribe">
@@ -283,6 +284,7 @@
       </div>
     </section>
   </main>
+  <script src="./scripts/index.js"></script>
 </body>
 {% include 'njk/footer.njk'%}
 

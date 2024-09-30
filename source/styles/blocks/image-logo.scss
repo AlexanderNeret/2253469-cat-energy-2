@@ -1,16 +1,20 @@
 .image-logo {
-  margin-left: 55px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 
   @media (min-width: $tablet-width) {
     margin-left: 13px;
+    left: 100%;
+    transform: translate(0%, -50%);
   }
 }
 
 .image-logo--footer {
   margin: 0;
-  display: flex;
-  justify-content: center;
-  padding: 40px 90px;
+  width: 128px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 0;

@@ -33,15 +33,16 @@
   font-size: 24px;
   line-height: 37px;
   position: relative;
+  margin-bottom: 30px;
 
   &::before {
-    margin: 20px;
     content: "";
     display: inline-block;
     background-color: $basic-green;
     mask-image: url("../../icons/stack.svg#circle-background");
     width: 50px;
     height: 50px;
+    margin-right: 20px;
   }
 
   &::after {
@@ -69,6 +70,7 @@
 }
 
 .advantages__item {
+  padding: 20px 23px 20px 20px;
   background-color: $bg-color;
 
   &--weightless .advantages__tittle::after {
@@ -79,7 +81,7 @@
     mask-repeat: no-repeat;
     mask-size: 36px 50px;
     position: absolute;
-    left: 30px;
+    left: 10px;
   }
 
   &--weightup .advantages__tittle::after {
@@ -90,8 +92,8 @@
     mask-repeat: no-repeat;
     mask-size: 67px 28px;
     position: absolute;
-    left: 10px;
-    top: 30px;
+    top: 10px;
+    left: -10px;
   }
 
   @media (min-width: $tablet-width) {
@@ -168,8 +170,7 @@
 
 
 .advantages__discription {
-  padding: 0 33px 38px 20px;
-  margin: 0;
+  margin: 0 0 38px;
   font-family: $primary-font;
   font-size: 14px;
   line-height: 18px;
@@ -183,7 +184,7 @@
     width: 240px;
     background-color: #d9d9d9;
     position: absolute;
-    bottom: 23px;
+    bottom: -23px;
   }
 
   @media (min-width: $tablet-width) {
@@ -200,7 +201,6 @@
 
 .advantages__link {
   display: flex;
-  padding: 0 126px 20px 20px;
   justify-content: space-between;
   text-transform: uppercase;
   font-size: 16px;
