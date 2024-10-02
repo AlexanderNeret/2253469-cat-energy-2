@@ -27,26 +27,29 @@
   line-height: 24px;
   position: relative;
   z-index: 0;
+  width: fit-content;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+  }
 
   &::before {
-    content: "";
-    display: block;
     width: 100vh;
     height: 2px;
     background-color: $basic-green;
-    position: absolute;
-    right: -20px;
-    top: 12px;
+    right: 0;
+    top: 50%;
     z-index: -1;
+    box-shadow: 100vw 0 0 $basic-green;
   }
 
   &::after {
-    content: "";
-    position: absolute;
     top: 0;
     left: -30px;
     z-index: -1;
-    width: calc(100% - 20px);
+    width: calc(100% + 30px);
     height: 100%;
     background: $white;
   }

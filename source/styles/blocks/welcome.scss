@@ -9,7 +9,7 @@
 }
 
 .welcome__wrapper {
-  width: 320px;
+  width: 100%;
   min-height: 305px;
   z-index: -1;
   position: relative;
@@ -22,7 +22,7 @@
     display: block;
     background-color: $basic-green;
     opacity: 85%;
-    width: 320px;
+    width: 100%;
     height: 305px;
     position: absolute;
     z-index: -1;

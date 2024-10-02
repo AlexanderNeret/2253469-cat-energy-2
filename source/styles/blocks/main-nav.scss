@@ -4,6 +4,7 @@
   line-height: 20px;
   position: absolute;
   background-color: $white;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -84,7 +85,7 @@
       height: 2px;
       background-color: $black;
       left: 0;
-      bottom: 3px;
+      bottom: 2px;
     }
   }
 }
@@ -92,6 +93,7 @@
 
 .main-nav--opened {
   display: block;
+  z-index: 1;
 }
 
 

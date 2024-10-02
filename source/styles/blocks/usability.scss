@@ -56,60 +56,43 @@
   display: flex;
   align-items: center;
 
+
   &--leaf::before,
   &--powder::before,
   &--cutlery::before,
   &--clock::before {
     content: "";
-    width: 80px;
+    width: 60px;
     height: 60px;
     display: inline-block;
     background-color: $basic-green;
     margin-right: 20px;
+    flex-shrink: 0;
+    background-size: 26px 30px;
   }
 
-  &--leaf::after {
-    content: "";
-    mask-image: url("../../icons/stack.svg#leaf");
-    background-color: $white;
-    position: absolute;
-    width: 26px;
-    height: 30px;
-    top: 20px;
-    left: 20px;
+  &--leaf::before {
+    background-image: url("../../icons/stack.svg#leaf");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
-  &--powder::after {
-    content: "";
-    mask-image: url("../../icons/stack.svg#powder");
-    background-color: $white;
-    position: absolute;
-    width: 26px;
-    height: 30px;
-    top: 15px;
-    left: 20px;
+  &--powder::before {
+    background-image: url("../../icons/stack.svg#powder");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
-  &--cutlery::after {
-    content: "";
-    mask-image: url("../../icons/stack.svg#cutlery");
-    background-color: $white;
-    position: absolute;
-    width: 26px;
-    height: 30px;
-    top: 20px;
-    left: 20px;
+  &--cutlery::before {
+    background-image: url("../../icons/stack.svg#cutlery");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
-  &--clock::after {
-    content: "";
-    mask-image: url("../../icons/stack.svg#clock");
-    background-color: $white;
-    position: absolute;
-    width: 26px;
-    height: 30px;
-    top: 15px;
-    left: 20px;
+  &--clock::before {
+    background-image: url("../../icons/stack.svg#clock");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   @media (min-width: $tablet-width) {
@@ -144,29 +127,7 @@
     &--clock::before {
       width: 80px;
       height: 80px;
-      position: absolute;
       margin: 0;
-      top: 40px;
-    }
-
-    &--leaf::after {
-      top: 66px;
-      left: 28px;
-    }
-
-    &--powder::after {
-      top: 66px;
-      left: 28px;
-    }
-
-    &--cutlery::after {
-      top: 66px;
-      left: 28px;
-    }
-
-    &--clock::after {
-      top: 66px;
-      left: 28px;
     }
   }
 }

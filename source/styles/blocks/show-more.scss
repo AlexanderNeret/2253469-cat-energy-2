@@ -1,5 +1,5 @@
 .show-more {
-  padding: 60px 20px 25px;
+  padding: 25px 20px;
   position: relative;
 
   &::after {
@@ -9,8 +9,9 @@
     height: 1px;
     background-color: #d9d9dd;
     position: absolute;
-    left: -20px;
+    left: -100%;
     bottom: 0;
+    box-shadow: 100vw 0 0 #d9d9dd;
   }
 
   @media (min-width: $tablet-width) {
@@ -39,9 +40,7 @@
     background-image: url("../../icons/icon-plus.svg");
     width: 30px;
     height: 30px;
-    position: absolute;
-    top: -55px;
-    right: 105px;
+    margin: 0 auto 23px;
   }
 
   @media (min-width: $tablet-width) {

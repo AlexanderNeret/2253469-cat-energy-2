@@ -22,11 +22,11 @@
   padding: 0 40px 0 20px;
   text-wrap: nowrap;
   background-color: $white;
+  width: fit-content;
 
   &::before,
   &::after {
     content: "";
-    display: block;
     position: absolute;
   }
 
@@ -34,18 +34,17 @@
     width: 100vw;
     height: 2px;
     background-color: $basic-green;
-    right: -20px;
-    top: 12px;
+    top: 50%;
+    box-shadow: 100vw 0 0 $basic-green;
+    right: 0;
     z-index: -1;
   }
 
   &::after {
-    content: "";
-    position: absolute;
     top: 0;
     left: -30px;
     z-index: -1;
-    width: calc(100% - 20px);
+    width: calc(100% + 30px);
     height: 100%;
     background: $white;
   }
@@ -96,7 +95,7 @@
   &::before {
     content: "";
     display: block;
-    width: 280px;
+    width: 100%;
     height: 1px;
     background-color: #d9d9dd;
     position: absolute;
@@ -191,7 +190,7 @@
     display: block;
     background-color: $basic-green;
     opacity: 85%;
-    width: 280px;
+    width: 100%;
     height: 290px;
     position: absolute;
   }
@@ -199,7 +198,7 @@
   &::after {
     content: "";
     display: block;
-    width: 280px;
+    width: 100%;
     height: 1px;
     background-color: #d9d9dd;
     position: absolute;
