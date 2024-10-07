@@ -3,18 +3,27 @@
   padding: 20px 20px 50px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px 150px;
+    padding: 20px 30px 50px;
     position: relative;
 
     &::after {
       content: "";
-      display: block;
-      width: 768px;
-      height: 1px;
       background-color: #e6e6e6;
+      width: 100vw;
+      height: 1px;
+      display: block;
       position: absolute;
-      bottom: 50px;
-      left: 0;
+      bottom: 0;
+      left: -100%;
+      box-shadow: 100vw 0 0 #e6e6e6;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 110px;
+
+    &::after {
+      display: none;
     }
   }
 }
@@ -29,7 +38,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
   }
 }
 
@@ -46,6 +55,10 @@
     flex-wrap: wrap;
     gap: 37px 145px;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 77px;
+  }
 }
 
 .usability__item {
@@ -57,10 +70,7 @@
   align-items: center;
 
 
-  &--leaf::before,
-  &--powder::before,
-  &--cutlery::before,
-  &--clock::before {
+  &::before {
     content: "";
     width: 60px;
     height: 60px;
@@ -69,62 +79,55 @@
     margin-right: 20px;
     flex-shrink: 0;
     background-size: 26px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &--leaf::before {
     background-image: url("../../icons/stack.svg#leaf");
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   &--powder::before {
     background-image: url("../../icons/stack.svg#powder");
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   &--cutlery::before {
     background-image: url("../../icons/stack.svg#cutlery");
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   &--clock::before {
     background-image: url("../../icons/stack.svg#clock");
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 151px 0 57px;
+    padding: 50px 17px 46px 0;
     width: 230px;
     background-repeat: no-repeat;
     background-position: right;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    background-size: 136px 280px;
 
     &--leaf {
       background-image: url("../../icons/background-one.svg");
-      background-size: 112px 280px;
     }
 
     &--powder {
       background-image: url("../../icons/background-two.svg");
-      background-size: 134px 280px;
     }
 
     &--cutlery {
       background-image: url("../../icons/background-three.svg");
-      background-size: 134px 280px;
     }
 
     &--clock {
       background-image: url("../../icons/background-four.svg");
-      background-size: 136px 280px;
     }
 
-    &--leaf::before,
-    &--powder::before,
-    &--cutlery::before,
-    &--clock::before {
+
+    &::before {
       width: 80px;
       height: 80px;
       margin: 0;

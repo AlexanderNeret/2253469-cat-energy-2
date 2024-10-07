@@ -5,9 +5,7 @@
   transform: translate(-50%, -50%);
 
   @media (min-width: $tablet-width) {
-    margin-left: 13px;
-    left: 100%;
-    transform: translate(0%, -50%);
+    left: 200%;
   }
 }
 
@@ -18,5 +16,9 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 70px;
   }
 }

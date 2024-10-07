@@ -6,7 +6,11 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px 45px;
+    padding: 0 30px 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 110px 30px;
   }
 }
 
@@ -19,8 +23,9 @@
   list-style-type: none;
 
   @media (min-width: $desktop-width) {
-    flex-flow: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
   }
 }
 
@@ -39,7 +44,7 @@
     content: "";
     display: inline-block;
     background-color: $basic-green;
-    mask-image: url("../../icons/stack.svg#circle-background");
+    border-radius: 50%;
     width: 50px;
     height: 50px;
     margin-right: 20px;
@@ -52,7 +57,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 77px 0 24px 53px;
+    margin: 0 0 23px;
+    width: fit-content;
 
     &::before,
     &::after {
@@ -61,10 +67,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+
     &::before {
       display: block;
       width: 100px;
       height: 100px;
+      margin-right: 60px;
     }
   }
 }
@@ -99,6 +108,7 @@
   @media (min-width: $tablet-width) {
     mask-repeat: no-repeat;
     position: relative;
+    padding: 77px 63px 53px 53px;
 
     &--weightless::after,
     &--weightup::after {
@@ -107,7 +117,7 @@
       content: "";
       display: inline-block;
       background-color: $basic-green;
-      mask-image: url("../../icons/stack.svg#circle-background");
+      border-radius: 50%;
       position: absolute;
       top: 80px;
       right: 63px;
@@ -141,6 +151,9 @@
   }
 
   @media (min-width: $desktop-width) {
+
+    padding: 40px 60px 55px 50px;
+
     &--weightless::after,
     &--weightup::after,
     &--weightless::before,
@@ -188,12 +201,17 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding: 0 53px 53px;
-    width: 340px;
+    width: 45%;
+    margin: 0 0 50px;
 
     &::after {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-bottom: 23px;
   }
 }
 
@@ -221,9 +239,11 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding: 0 0 53px 53px;
-    width: 165px;
     display: flex;
     align-items: center;
+
+    &::after {
+      margin-left: 25px;
+    }
   }
 }

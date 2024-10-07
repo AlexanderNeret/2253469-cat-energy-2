@@ -31,21 +31,21 @@
         </button>
 
       </div>
-      <nav class="main-nav no-js">
+      <nav class="main-nav main-nav--bg no-js">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link  site-list__link--current" href="index.html" aria-current="page">
+            <a class="site-list__link  site-list__link--current site-list__link--opposite" href="index.html" aria-current="page">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
+            <a class="site-list__link site-list__link--opposite" href="catalog.html">
 
               Каталог Продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">
+            <a class="site-list__link site-list__link--opposite" href="#">
               Подбор Программы
             </a>
           </li>
@@ -57,15 +57,17 @@
         <h1 class="welcome__tittle">Функциональное питание для котов</h1>
         <p class="welcome__slogan">Занялся собой? Займись котом</p>
       </div>
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/main-can-desktop@1x.png 1x, images/main-can-desktop@2x.png 2x" type="image/png" width="552" height="499">
-        <source media="(min-width: 768px)" srcset="images/main-can-tablet@1x.png 1x, images/main-can-tablet@2x.png 2x" type="image/png" width="709" height="609">
-        <img class="welcome__image-can" src="images/main-can-mobile@1x.png" width="280" height="270" alt="Банка с кормом" srcset="images/main-can-mobile@2x.png 2x">
-      </picture>
-      <a class="welcome__choose-programm" href="catalog.html">
+      <div class="welcome__container">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/main-can-desktop@1x.png 1x, images/main-can-desktop@2x.png 2x" type="image/png" width="552" height="499">
+          <source media="(min-width: 768px)" srcset="images/main-can-tablet@1x.png 1x, images/main-can-tablet@2x.png 2x" type="image/png" width="709" height="609">
+          <img class="welcome__image-can" src="images/main-can-mobile@1x.png" width="280" height="270" alt="Банка с кормом" srcset="images/main-can-mobile@2x.png 2x">
+        </picture>
+        <a class="welcome__choose-programm" href="catalog.html">
 
-        Подобрать Программу
-      </a>
+          Подобрать Программу
+        </a>
+      </div>
     </section>
   </header>
   <main class="main-container">
