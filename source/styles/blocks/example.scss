@@ -156,17 +156,31 @@
 }
 
 .example__slider {
-
+  position: relative;
 }
 
 .example__image {
-
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
 }
 
 .example__image--fat {
-
+  position: absolute;
+  inset: 0;
+  filter: grayscale(100%);
 }
 
 .example__image--thick {
+
+}
+
+.example__slider-line {
+
+}
+
+.example__slider-button {
 
 }

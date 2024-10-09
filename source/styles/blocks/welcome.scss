@@ -22,8 +22,7 @@
   @media (min-width: $tablet-width) {
     background-color: $white;
     background-image: none;
-    display: flex;
-    flex-direction: column;
+    min-height: 0;
     width: 59%;
     z-index: -1;
     position: static;
@@ -65,7 +64,7 @@
   @media (min-width: $tablet-width) {
     text-transform: uppercase;
     text-align: start;
-    margin: 0;
+    margin: 0 0 50px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -84,7 +83,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: -400px 330px 0 430px;
+    margin: -300px 330px 0 430px;
   }
 }
 
@@ -106,7 +105,7 @@
     width: 192px;
     position: absolute;
     top: 20px;
-    left: 120px;
+    left: 13%;
     margin: 0;
   }
 

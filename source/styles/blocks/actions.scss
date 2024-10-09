@@ -69,6 +69,18 @@
       width: calc(100% + 0px);
     }
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    padding: 0 40px 0 110px;
+    margin-bottom: 80px;
+    width: 253px;
+
+    &::after {
+      left: 50px;
+    }
+  }
 }
 
 .actions__discription {
@@ -90,6 +102,11 @@
     display: flex;
     width: 632px;
     padding: 0 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 752px;
+    padding: 0;
   }
 }
 

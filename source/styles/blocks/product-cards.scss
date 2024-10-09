@@ -14,13 +14,27 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 325px 325px;
-    gap: 140px 60px;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 60px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 245px 245px 245px 245px;
     gap: 140px 80px;
+  }
+}
+
+.product-cards__container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 55px 50px;
+  padding: 20px 20px 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 37px;
+    background-color: #f2f2f2;
+    min-height: 350px;
+    display: block;
   }
 }
 
@@ -58,7 +72,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin: 0 0 165px;
+    margin: 0 0 85px;
     text-align: left;
 
     &::before,
@@ -69,12 +83,6 @@
 }
 
 .product-cards__item {
-  position: relative;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 55px 50px;
-  padding: 20px 20px 25px;
-
   &::after {
     content: "";
     background-color: #d9d9dd;
@@ -91,29 +99,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    background-color: $bg-color;
+    padding: 80px 0 0;
+    height: fit-content;
     margin: 0;
 
     &::after {
       display: none;
     }
   }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 40px 40px;
-  }
 }
 
 .product-cards__image {
   @media (min-width: $tablet-width) {
-    position: absolute;
-    left: 85px;
-    top: -81px;
+    display: block;
+    margin: -120px auto 40px;
   }
 
   @media (min-width: $desktop-width) {
     left: 50px;
+  }
+}
+
+.product-cards__image--small {
+  @media (min-width: $tablet-width) {
+    margin: -90px auto 40px;
   }
 }
 
@@ -129,6 +138,12 @@
   @media (min-width: $tablet-width) {
     width: 135px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 140px;
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -147,11 +162,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
-    padding-top: 160px;
+    margin-bottom: 23px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 150px;
     margin-bottom: 20px;
   }
 }
@@ -186,8 +200,12 @@
   text-transform: uppercase;
   margin-top: 20px;
 
+  @media (min-width: $tablet-width) {
+
+    margin-top: 30px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 10px 54px;
-    margin-top: 30px;
   }
 }
