@@ -1,9 +1,9 @@
 .usability {
   color: $dark-grey;
-  padding: 20px 20px 50px;
+  padding: 20px 0 50px;
 
   @media (min-width: $tablet-width) {
-    padding: 20px 30px 50px;
+    padding: 20px 0 50px;
     position: relative;
 
     &::after {
@@ -20,7 +20,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 40px 110px;
+    padding: 40px 0;
 
     &::after {
       display: none;

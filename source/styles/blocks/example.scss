@@ -1,14 +1,14 @@
 .example {
   background-color: #eaeaea;
-  padding: 25px 20px 40px;
+  padding: 25px 0 40px;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
-    padding: 45px 30px;
+    padding: 45px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 70px 110px;
+    padding: 70px 0;
   }
 }
 
@@ -170,7 +170,6 @@
 .example__image--fat {
   position: absolute;
   inset: 0;
-  filter: grayscale(100%);
 }
 
 .example__image--thick {

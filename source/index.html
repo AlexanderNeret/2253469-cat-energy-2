@@ -16,7 +16,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__container">
+    <div class="main-header__container container">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="index.html">
           <picture>
@@ -34,7 +34,7 @@
       <nav class="main-nav main-nav--bg no-js">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link  site-list__link--current site-list__link--opposite" href="index.html" aria-current="page">
+            <a class="site-list__link  site-list__link--current site-list__link--opposite site-list__link--page" href="index.html" aria-current="page">
               Главная
             </a>
           </li>
@@ -53,26 +53,29 @@
       </nav>
     </div>
     <section class="welcome">
-      <div class="welcome__wrapper">
-        <h1 class="welcome__tittle">Функциональное питание для котов</h1>
-        <p class="welcome__slogan">Занялся собой? Займись котом</p>
-      </div>
-      <div class="welcome__container">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/main-can-desktop@1x.png 1x, images/main-can-desktop@2x.png 2x" type="image/png" width="552" height="499">
-          <source media="(min-width: 768px)" srcset="images/main-can-tablet@1x.png 1x, images/main-can-tablet@2x.png 2x" type="image/png" width="709" height="609">
-          <img class="welcome__image-can" src="images/main-can-mobile@1x.png" width="280" height="270" alt="Банка с кормом" srcset="images/main-can-mobile@2x.png 2x">
-        </picture>
-        <a class="welcome__choose-programm" href="catalog.html">
+      <div class="welcome__container container">
+        <div class="welcome__wrapper">
+          <h1 class="welcome__tittle">Функциональное питание для котов</h1>
+          <p class="welcome__slogan">Занялся собой? Займись котом</p>
+        </div>
+        <div class="welcome__container">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/main-can-desktop@1x.png 1x, images/main-can-desktop@2x.png 2x" type="image/png" width="552" height="499">
+            <source media="(min-width: 768px)" srcset="images/main-can-tablet@1x.png 1x, images/main-can-tablet@2x.png 2x" type="image/png" width="709" height="609">
+            <img class="welcome__image-can" src="images/main-can-mobile@1x.png" width="280" height="270" alt="Банка с кормом" srcset="images/main-can-mobile@2x.png 2x">
+          </picture>
+          <a class="welcome__choose-programm" href="catalog.html">
 
-          Подобрать Программу
-        </a>
+            Подобрать Программу
+          </a>
+        </div>
+
       </div>
     </section>
   </header>
   <main class="main-container">
     <section class="advantages">
-      <div class="advantages__wrapper">
+      <div class="container">
         <h2 class="visually-hidden">Наши Преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--weightless">
@@ -90,7 +93,7 @@
       </div>
     </section>
     <section class="usability">
-      <div class="usability__wrapper">
+      <div class="usability__wrapper container">
         <h2 class="usability__tittle">Как это работает?</h2>
         <ol class="usability__list">
           <li class="usability__item usability__item--leaf">
@@ -123,32 +126,34 @@
       </div>
     </section>
     <section class="example">
-      <h2 class="example__tittle">Живой пример</h2>
-      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <div class="example__container">
-        <ul class="example__list">
-          <li class="example__item">
-            <span class="example__number">5 КГ</span>
-            <span class="example__discription">Снижение веса</span>
-          </li>
-          <li class="example__item">
-            <span class="example__number example__number--current">60 Дней</span>
-            <span class="example__discription example__discription--current">Затрачено времени</span>
-          </li>
-        </ul>
-        <span class="example__commentary">Затраты на питание: 15 000 РУБ.</span>
-      </div>
-      <div class="example__slider">
-        <picture>
-          <source media="(min-width: 768px)" srcset="images/fat-cat-tablet@1x.png 1x, images/fat-cat-tablet@2x.png 2x" width="560" height="512" type="image/png">
-          <img class="example__image example__image--fat" src="images/fat-cat-mobile@1x.png" width="140" height="256" alt="Кот До" srcset="images/fat-cat-mobile@2x.png 2x">
-        </picture>
-        <picture>
-          <source media="(min-width: 768px)" srcset="images/thickk-cat-tablet@1x.png 1x, images/thickk-cat-tablet@2x.png 2x" width="560" height="512" type="image/png">
-          <img class="example__image example__image--thick" src="images/thick-cat.png" width="140" height="256" alt="Кот После">
-        </picture>
-        <div class="example__slider-line"></div>
-        <div class="example__slider-button"></div>
+      <div class="container">
+        <h2 class="example__tittle">Живой пример</h2>
+        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="example__container">
+          <ul class="example__list">
+            <li class="example__item">
+              <span class="example__number">5 КГ</span>
+              <span class="example__discription">Снижение веса</span>
+            </li>
+            <li class="example__item">
+              <span class="example__number example__number--current">60 Дней</span>
+              <span class="example__discription example__discription--current">Затрачено времени</span>
+            </li>
+          </ul>
+          <span class="example__commentary">Затраты на питание: 15 000 РУБ.</span>
+        </div>
+        <div class="example__slider">
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/fat-cat-tablet@1x.png 1x, images/fat-cat-tablet@2x.png 2x" width="560" height="512" type="image/png">
+            <img class="example__image example__image--fat" src="images/fat-cat-mobile@1x.png" width="140" height="256" alt="Кот До" srcset="images/fat-cat-mobile@2x.png 2x">
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcset="images/thickk-cat-tablet@1x.png 1x, images/thickk-cat-tablet@2x.png 2x" width="560" height="512" type="image/png">
+            <img class="example__image example__image--thick" src="images/thick-cat.png" width="140" height="256" alt="Кот После">
+          </picture>
+          <div class="example__slider-line"></div>
+          <div class="example__slider-button"></div>
+        </div>
       </div>
     </section>
   </main>

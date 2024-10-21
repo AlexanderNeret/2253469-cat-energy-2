@@ -12,7 +12,7 @@
 }
 
 .main-footer__container {
-  padding: 20px;
+  padding: 20px 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -170,12 +170,17 @@
   }
 }
 
+.main-footer__wrap--academy {
+  padding: 20px;
+}
+
 .main-footer__academy-logo {
   position: absolute;
-  right: 0;
+  right: 20px;
 
   @media (min-width: $tablet-width) {
     position: relative;
+    right: 0;
   }
 }
 

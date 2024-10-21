@@ -2,12 +2,8 @@
   color: #000000;
   padding: 40px 0;
 
-  @media (min-width: $tablet-width) {
-    padding: 40px 30px;
-  }
-
   @media (min-width: $desktop-width) {
-    padding: 96px 110px 104px;
+    padding: 96px 0 104px;
   }
 }
 
@@ -36,13 +32,13 @@
   }
 
   &::before {
-    width: 100vh;
+    width: 100vw;
     height: 2px;
     background-color: $basic-green;
-    right: 0;
     top: 50%;
-    z-index: -1;
     box-shadow: 100vw 0 0 $basic-green;
+    right: 0;
+    z-index: -1;
   }
 
   &::after {
@@ -59,26 +55,26 @@
     font-size: 32px;
     line-height: 32px;
     background-color: $white;
-    padding: 0 40px;
-    width: 200px;
+    padding: 0;
+    width: fit-content;
     text-wrap: nowrap;
     margin-bottom: 65px;
 
     &::after {
-      left: 0;
-      width: calc(100% + 0px);
+      left: -30px;
+      width: calc(100% + 60px);
     }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
-    padding: 0 40px 0 110px;
     margin-bottom: 80px;
-    width: 253px;
+    width: fit-content;
 
     &::after {
-      left: 50px;
+      width: calc(100% + 80px);
+      left: -40px;
     }
   }
 }
