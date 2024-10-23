@@ -55,14 +55,14 @@
     font-size: 32px;
     line-height: 32px;
     background-color: $white;
-    padding: 0;
+    padding: 0 40px;
     width: fit-content;
     text-wrap: nowrap;
     margin-bottom: 65px;
 
     &::after {
-      left: -30px;
-      width: calc(100% + 60px);
+      left: 0;
+      width: 100%;
     }
   }
 

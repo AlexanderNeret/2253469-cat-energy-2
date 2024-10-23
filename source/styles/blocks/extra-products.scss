@@ -54,11 +54,11 @@
     line-height: 32px;
     width: fit-content;
     margin-bottom: 80px;
-    padding: 0;
+    padding: 0 40px;
 
     &::after {
-      left: -30px;
-      width: calc(100% + 60px);
+      width: 100%;
+      left: 0;
     }
   }
 
