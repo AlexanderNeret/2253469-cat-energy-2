@@ -20,6 +20,6 @@ button.addEventListener('click', () => {
 
 const div = document.querySelector('.example__slider');
 document.querySelector('.example__slider-range').addEventListener('input', (e) => {
-  div.style.setPropery('--position', `${e.target.value}%`);
+  div.style.setProperty('--position', `${e.target.value}%`);
 });
 
