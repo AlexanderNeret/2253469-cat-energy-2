@@ -1,6 +1,6 @@
 .product-cards {
   @media (min-width: $tablet-width) {
-    padding: 65px 0 35px;
+    padding: 50px 0 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,7 +20,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
-    gap: 140px 80px;
+    gap: 60px 80px;
   }
 }
 
@@ -47,7 +47,7 @@
   width: 100%;
   text-align: center;
   text-wrap: nowrap;
-  margin: 50px auto;
+  margin: 27px -11px 40px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -67,11 +67,11 @@
   }
 
   &::before {
-    bottom: 55px;
+    bottom: 63px;
   }
 
   &::after {
-    top: 56px;
+    top: 75px;
   }
 
   @media (min-width: $tablet-width) {
@@ -116,17 +116,18 @@
 .product-cards__image {
   @media (min-width: $tablet-width) {
     display: block;
-    margin: -120px auto 40px;
+    margin: -105px auto 20px;
   }
 
   @media (min-width: $desktop-width) {
     left: 50px;
   }
-}
 
-.product-cards__image--small {
-  @media (min-width: $tablet-width) {
-    margin: -90px auto 40px;
+
+  &--small {
+    @media (min-width: $tablet-width) {
+      margin: -90px auto 27px;
+    }
   }
 }
 
@@ -147,7 +148,7 @@
   @media (min-width: $desktop-width) {
     width: 140px;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 25px;
   }
 }
 
@@ -155,6 +156,10 @@
   grid-row: 1 / 3;
   margin-top: 10px;
   justify-self: center;
+
+  &--big {
+    margin-top: 3px;
+  }
 }
 
 .product-cards__name {
@@ -178,7 +183,7 @@
   margin: 0;
   grid-column-end: 3;
   display: grid;
-  grid-template-columns: 70px 70px;
+  grid-template-columns: 70px 69px;
   font-family: $primary-font;
   font-size: 12px;
   line-height: 16px;
@@ -188,17 +193,18 @@
     font-size: 16px;
     line-height: 20px;
     grid-template-columns: 1fr 1fr;
+    row-gap: 6px;
   }
 }
 
 .product-cards__button {
-  padding: 10px 110px;
+  padding: 9px 110px;
   grid-column: 1/3;
   text-decoration: none;
   color: $white;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 18px;
 
   @media (min-width: $tablet-width) {
 
@@ -207,5 +213,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 10px 54px;
+    margin-top: 35px;
   }
 }

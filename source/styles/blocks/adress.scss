@@ -1,14 +1,14 @@
 .adress {
   display: flex;
   justify-content: space-between;
-  gap: 15px;
+  gap: 20px;
 
   @media (min-width: $tablet-width) {
     gap: 310px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 87px;
+    gap: 100px;
   }
 }
 

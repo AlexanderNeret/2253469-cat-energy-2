@@ -2,24 +2,27 @@
   padding: 0 20px;
   width: 100%;
 
-  @media (min-width: $mobile-width) {
-    flex-direction: column;
-    padding: 0;
+  &--index {
+    background-color: $bg-color;
   }
 
-  @media (min-width: $tablet-width) {
+  &--opposite {
+    background-color: $bg-color;
+  }
+
+  @media (min-width: $mobile-width) {
+    padding: 0;
   }
 }
 
 .main-footer__container {
-  padding: 20px 0;
+  padding: 10px 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 55px 30px;
-    background-color: $bg-color;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,21 +38,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 80px;
     position: absolute;
     z-index: 1;
     background-color: $white;
-    width: 30%;
-    margin: 95px 0 0 110px;
+    width: 400px;
+    margin: 125px 0 0 110px;
+    padding: 60px 80px;
   }
-}
-
-.main-footer__adress--white {
-  background-color: $white;
-}
-
-.main-footer__adress--gray {
-  background-color: $bg-color;
 }
 
 .main-footer__map {
@@ -67,13 +62,9 @@
 }
 
 .main-footer__logo {
-  height: 24px;
+  height: 34px;
   width: 128px;
   display: block;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-  }
 }
 
 .main-footer__social {
@@ -144,6 +135,7 @@
   display: block;
   width: fit-content;
 
+
   @media (min-width: $tablet-width) {
     padding: 0;
     gap: 23px;
@@ -156,12 +148,14 @@
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #d9d9d9;
-  padding: 20px 95px;
+  padding: 20px 76px;
+  margin: 0 20px;
 
   &:last-child {
     border-bottom: none;
     position: relative;
     display: block;
+    margin: 0;
   }
 
   @media (min-width: $tablet-width) {

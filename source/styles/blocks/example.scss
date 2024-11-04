@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: $white;
-    padding: 45px 0 100px;
+    padding: 66px 0 93px;
     position: relative;
 
     &::before {
@@ -14,16 +14,16 @@
       height: 462px;
       display: block;
       background-color: #eaeaea;
-      top: 605px;
+      top: 642px;
       left: 0;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 70px 0;
+    padding: 30px 0;
 
     &::before {
-      top: 210px;
+      top: 165px;
     }
   }
 }
@@ -31,7 +31,7 @@
 .example__box {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 560px;
   }
 }
 
@@ -70,6 +70,7 @@
   @media (min-width: $desktop-width) {
     width: 436px;
     position: relative;
+    margin-bottom: 70px;
   }
 }
 
@@ -92,7 +93,7 @@
 
 .example__list {
   list-style-type: none;
-  margin: 0 0 34px;
+  margin: 0 0 22px;
   display: flex;
   justify-content: space-between;
   padding: 0;
@@ -104,7 +105,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 45px;
   }
 }
 
@@ -134,6 +135,7 @@
 
 .example__number--current {
   padding: 15px 23px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     padding: 15px 30px 20px;
@@ -151,7 +153,7 @@
   top: 47px;
   left: 25px;
   background-color: #eaeaea;
-  padding: 0 10px;
+  padding: 0 7px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -175,8 +177,26 @@
   }
 }
 
-.example__commentary {
+.example__wrap {
   padding: 0 46px;
+  gap: 3px;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 0 15px;
+    row-gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 329px;
+  }
+}
+
+.example__commentary {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 20px;

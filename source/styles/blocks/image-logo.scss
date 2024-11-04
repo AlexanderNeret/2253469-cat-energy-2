@@ -10,18 +10,16 @@
     margin-left: 14px;
     left: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
 }
 
 .image-logo--footer {
   margin: 0;
   width: 128px;
+  height: 34px;
   position: relative;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-  }
-
-  @media (min-width: $tablet-width) {
-    left: 70px;
-  }
 }

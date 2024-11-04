@@ -4,6 +4,28 @@
   @media (min-width: $tablet-width) {
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    &--bg {
+      min-height: 694px;
+    }
+
+    &--bg::before {
+      background-image: linear-gradient(45deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/background-image-cat-desktop.png");
+      background-size: contain;
+      background-color: #434247;
+      background-position: right;
+      background-repeat: no-repeat;
+      content: "";
+      position: absolute;
+      width: 50%;
+      min-height: 100%;
+      top: 0;
+      right: 0;
+    }
+  }
 }
 
 .main-header__container {
@@ -14,12 +36,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 25px;
     align-items: center;
 
     @media (min-width: $desktop-width) {
       margin-bottom: 110px;
       padding-bottom: 0;
+      padding-top: 50px;
     }
   }
 
@@ -34,7 +57,6 @@
   display: flex;
   align-items: center;
   position: relative;
-  justify-content: space-between;
 }
 
 .main-header__logo {
@@ -42,7 +64,12 @@
   display: flex;
   align-items: center;
   width: 100%;
-}
 
-.main-header__logo-picture {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
 }
