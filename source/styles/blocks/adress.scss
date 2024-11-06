@@ -17,10 +17,12 @@
   font-size: 16px;
   line-height: 20px;
   color: #111111;
+  width: 50%;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    width: 163px;
   }
 }
 
@@ -30,9 +32,26 @@
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+  margin-bottom: -5px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+  }
+}
+
+.adress__discription {
+  font-style: normal;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    width: 163px;
+    display: block;
   }
 }

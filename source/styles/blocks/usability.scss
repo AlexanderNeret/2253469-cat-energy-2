@@ -19,7 +19,7 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 50px 0;
 
     &::after {
@@ -51,9 +51,8 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 37px 145px;
+    gap: 40px 136px;
   }
 
   @media (min-width: $desktop-width) {
@@ -143,5 +142,6 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    width: 245px;
   }
 }

@@ -2,6 +2,10 @@
   color: #000000;
   padding: 15px 0 42px;
 
+  @media (min-width: $tablet-width) {
+    padding: 40px 0 74px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 68px 0 104px;
   }
@@ -12,6 +16,10 @@
   display: flex;
   justify-content: center;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 35px;
+  }
 }
 
 .actions__tittle {
@@ -69,7 +77,7 @@
   @media (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
-    margin-bottom: 75px;
+    margin-bottom: 70px;
     width: fit-content;
     padding: 0;
 
@@ -118,15 +126,15 @@
   font-family: $secondary-font;
 
   &:hover {
-    border-color: #cdcdcd;
+    outline: 1px #cdcdcd;
   }
 
   &:focus {
-    border-color: $dark-grey;
+    outline: 2px $dark-grey;
   }
 
   &:invalid {
-    border-color: #ff8282;
+    outline: 2px #ff8282;
   }
 
 

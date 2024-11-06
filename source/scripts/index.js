@@ -1,5 +1,4 @@
-/* в этот файл добавляет скрипты*/
-// eslint-disable-next-line no-unused-vars
+
 
 const button = document.querySelector('.main-nav__toggle');
 
