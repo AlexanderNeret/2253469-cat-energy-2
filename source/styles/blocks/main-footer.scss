@@ -20,6 +20,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 60px 30px;
@@ -83,10 +84,21 @@
   display: block;
 }
 
+.main-footer__logo:hover .image-logo--footer,
+.main-footer__logo:focus .image-logo--footer {
+  fill: #3e3e3e;
+}
+
+.main-footer__logo:active .image-logo--footer {
+  fill: #6b6b6b;
+  opacity: 0.3;
+}
+
 .main-footer__social {
   padding: 0;
   justify-content: center;
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   list-style-type: none;
   position: relative;
@@ -105,6 +117,7 @@
 
 .main-footer__social-link {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 
   &::before {
@@ -152,28 +165,22 @@
   width: fit-content;
 
 
-  &:hover.main-footer__academy-logo {
-    background-color: #68b738;
-  }
-
-  &:focus {
-    opacity: 0.3;
-  }
-
   @media (min-width: $tablet-width) {
     padding: 0;
     gap: 23px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
   }
 }
 
+
 .main-footer__wrap {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   border-bottom: 1px solid #d9d9d9;
   padding: 20px 76px;
-  margin: 0 20px;
 
   &:last-child {
     border-bottom: none;
@@ -203,20 +210,23 @@
 .main-footer__academy-logo {
   position: absolute;
   right: 20px;
-  mask-image: url("../../images/academy-logo-.svg");
-  mask-size: 27px 34px;
-  mask-repeat: no-repeat;
-  background-color: #666666;
-
-  &:focus {
-    background-color: #68b738;
-    opacity: 0.3;
-  }
+  fill: currentColor;
 
   @media (min-width: $tablet-width) {
     position: relative;
     right: 0;
   }
+}
+
+
+.main-footer__academy-logo-link:hover .main-footer__academy-logo {
+  fill: #68b738;
+}
+
+.main-footer__academy-logo-link:active .main-footer__academy-logo,
+.main-footer__academy-logo-link:active .main-footer__academy-title {
+  opacity: 0.3;
+  fill: #68b738;
 }
 
 .main-footer__academy-title {

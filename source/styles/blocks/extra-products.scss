@@ -170,6 +170,7 @@
 
 .extra-products__stats {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 15px 0;
 
@@ -236,14 +237,25 @@
 .extra-products__order {
   background-position: center;
   margin-top: 54px;
-  background-image: linear-gradient(45deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/cat-cage-background.png");
+  background-image: image-set(url("../../images/cat-cage-background-mobile@1x.png"), url("../../images/cat-cage-background-mobile@1x.webp"), url("../../images/cat-cage-background-mobile@2x.png"), url("../../images/cat-cage-background-mobile@2x.webp"));
   min-height: 290px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
 
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $basic-green;
+    opacity: 0.85;
+    min-height: 290px;
+    background-size: cover;
+    width: 100%;
+  }
 
   &::after {
     content: "";
@@ -259,10 +271,10 @@
     width: 100%;
     min-height: 200px;
     margin-top: 70px;
+    background-image: image-set(url("../../images/cat-cage-background-tablet@1x.png"), url("../../images/cat-cage-background-tablet@1x.webp"), url("../../images/cat-cage-background-tablet@2x.png"), url("../../images/cat-cage-background-tablet@2x.webp"));
 
     &::before {
-      width: 708px;
-      height: 200px;
+      min-height: 200px;
     }
 
     &::after {
@@ -272,6 +284,10 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+
+    &::before {
+      min-height: 285px;
+    }
   }
 }
 
@@ -311,7 +327,7 @@
     text-align: center;
     padding: 0 0 43px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-flow: column-reverse wrap;
 
     &::before {
       left: 45px;

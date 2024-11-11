@@ -13,9 +13,8 @@
     }
 
     &--bg::before {
-      background-image: linear-gradient(45deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/background-image-cat-desktop.png");
-      background-size: contain;
-      background-color: #434247;
+      background-image: image-set(url("../../images/background-image-cat-desktop@1x.png"), url("../../images/background-image-cat-desktop@1x.webp"), url("../../images/background-image-cat-desktop@2x.png"), url("../../images/background-image-cat-desktop@2x.webp"));
+      background-size: cover;
       background-position: right;
       background-repeat: no-repeat;
       content: "";
@@ -24,6 +23,19 @@
       min-height: 100%;
       top: 0;
       right: 0;
+    }
+
+    &--bg::after {
+      background-color: $basic-green;
+      opacity: 0.85;
+      background-size: contain;
+      content: "";
+      position: absolute;
+      width: 50%;
+      min-height: 100%;
+      top: 0;
+      right: 0;
+      background-position: right;
     }
   }
 }
@@ -38,6 +50,7 @@
     justify-content: space-between;
     padding-top: 25px;
     align-items: center;
+    flex-wrap: wrap;
 
     @media (min-width: $desktop-width) {
       margin-bottom: 110px;
@@ -58,12 +71,14 @@
   align-items: center;
   position: relative;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .main-header__logo {
   text-decoration: none;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
 
   &:hover {

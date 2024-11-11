@@ -18,7 +18,7 @@
     padding: 50px 37px 40px;
     border: 1px solid $bg-color;
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     align-items: center;
     margin-top: 80px;
 

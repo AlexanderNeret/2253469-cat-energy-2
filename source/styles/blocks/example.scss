@@ -4,17 +4,17 @@
 
   @media (min-width: $tablet-width) {
     background-color: $white;
-    padding: 66px 0 93px;
+    padding: 50px 0 93px;
     position: relative;
 
     &::before {
       content: "";
       position: absolute;
       width: 100%;
-      height: 462px;
+      height: 463px;
       display: block;
       background-color: #eaeaea;
-      top: 642px;
+      top: 626px;
       left: 0;
     }
   }
@@ -79,6 +79,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
@@ -111,7 +112,7 @@
 
 .example__item {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   position: relative;
   padding-bottom: 13px;
 }
@@ -181,6 +182,7 @@
   justify-content: center;
   gap: 3px;
   display: flex;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -257,6 +259,12 @@
   width: 100%;
   height: 100%;
   opacity: 0;
+
+  &:hover + .example__slider-line,
+  &:focus + .example__slider-line,
+  &:hover + .example__slider-line::before {
+    background-color: $basic-green;
+  }
 }
 
 .example__slider-line {
@@ -285,21 +293,5 @@
     left: var(--position);
     transform: translateX(-50%);
     top: 40%;
-  }
-
-  &:hover {
-    outline: 1px solid #ff8282;
-  }
-
-  &::before:hover {
-    outline: 1px solid #ff8282;
-  }
-
-  &:focus {
-    outline: 1px solid $basic-green;
-  }
-
-  &::before:focus {
-    outline: 1px solid $basic-green;
   }
 }

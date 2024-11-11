@@ -20,19 +20,8 @@
 .image-logo--footer {
   margin: 0;
   position: relative;
-  mask-image: url("../../images/main-logo-mobile.svg");
-  mask-repeat: no-repeat;
-  mask-size: 128px 24px;
-  background-color: currentColor;
+  fill: currentColor;
 
-
-  &:hover {
-    background-color: #3e3e3e;
-  }
-
-  &:focus {
-    background-color: #6b6b6b;
-  }
 
   @media (min-width: $tablet-width) {
     top: 0;
