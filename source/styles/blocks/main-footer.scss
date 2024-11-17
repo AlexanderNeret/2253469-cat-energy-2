@@ -13,21 +13,38 @@
   @media (min-width: $mobile-width) {
     padding: 0;
   }
+
+  &--adress {
+    padding: 26px 20px;
+
+    @media (min-width: $tablet-width) {
+      padding: 60px 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      z-index: 1;
+      background-color: $white;
+      width: 400px;
+      margin: 125px 0 0 110px;
+      padding: 60px 80px;
+    }
+  }
 }
 
 .main-footer__container {
   padding: 10px 0;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
     padding: 60px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 110px;
+    padding: 72px 110px;
+    gap: 360px;
   }
 }
 
@@ -44,22 +61,6 @@
   }
 }
 
-.main-footer--adress {
-  padding: 26px 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 60px 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    z-index: 1;
-    background-color: $white;
-    width: 400px;
-    margin: 125px 0 0 110px;
-    padding: 60px 80px;
-  }
-}
 
 .main-footer__map {
   width: 100%;
@@ -82,17 +83,18 @@
   height: 34px;
   width: 128px;
   display: block;
+
+  &:hover .image-logo--footer,
+  .main-footer__logo:focus .image-logo--footer {
+    fill: #3e3e3e;
+  }
+
+  &:active .image-logo--footer {
+    fill: #6b6b6b;
+    opacity: 0.3;
+  }
 }
 
-.main-footer__logo:hover .image-logo--footer,
-.main-footer__logo:focus .image-logo--footer {
-  fill: #3e3e3e;
-}
-
-.main-footer__logo:active .image-logo--footer {
-  fill: #6b6b6b;
-  opacity: 0.3;
-}
 
 .main-footer__social {
   padding: 0;
@@ -165,6 +167,17 @@
   width: fit-content;
 
 
+  &:hover .main-footer__academy-logo {
+    fill: #68b738;
+  }
+
+  &:active .main-footer__academy-logo,
+  &:active .main-footer__academy-title {
+    opacity: 0.3;
+    fill: #68b738;
+  }
+
+
   @media (min-width: $tablet-width) {
     padding: 0;
     gap: 23px;
@@ -192,25 +205,28 @@
     border: none;
     padding: 0;
     margin: 0;
+    display: flex;
 
     &:first-child {
       margin-right: 38px;
     }
   }
-}
 
-.main-footer__wrap--academy {
-  padding: 20px;
 
-  @media (min-width: $tablet-width) {
-    padding: 0;
+  &--academy {
+    padding: 20px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
   }
 }
+
 
 .main-footer__academy-logo {
   position: absolute;
   right: 20px;
-  fill: currentColor;
+  fill: #666666;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -218,16 +234,6 @@
   }
 }
 
-
-.main-footer__academy-logo-link:hover .main-footer__academy-logo {
-  fill: #68b738;
-}
-
-.main-footer__academy-logo-link:active .main-footer__academy-logo,
-.main-footer__academy-logo-link:active .main-footer__academy-title {
-  opacity: 0.3;
-  fill: #68b738;
-}
 
 .main-footer__academy-title {
   font-family: $primary-font;

@@ -27,7 +27,6 @@
   color: $black;
   position: relative;
   padding: 0 40px 0 0;
-  text-wrap: nowrap;
   background-color: $white;
   width: fit-content;
 
@@ -124,6 +123,7 @@
     border-right: 1px solid #cdcdcd;
     margin: 0;
     padding: 27px 38px;
+    column-gap: 200px;
 
     &:last-child {
       border-bottom: 1px solid #cdcdcd;
@@ -252,9 +252,8 @@
     content: "";
     background-color: $basic-green;
     opacity: 0.85;
-    min-height: 290px;
-    background-size: cover;
     width: 100%;
+    inset: 0;
   }
 
   &::after {
@@ -273,21 +272,14 @@
     margin-top: 70px;
     background-image: image-set(url("../../images/cat-cage-background-tablet@1x.png"), url("../../images/cat-cage-background-tablet@1x.webp"), url("../../images/cat-cage-background-tablet@2x.png"), url("../../images/cat-cage-background-tablet@2x.webp"));
 
-    &::before {
-      min-height: 200px;
-    }
-
     &::after {
       display: none;
     }
   }
 
   @media (min-width: $desktop-width) {
+    background-image: image-set(url("../../images/cat-cage-background-mobile@1x.png"), url("../../images/cat-cage-background-mobile@1x.webp"), url("../../images/cat-cage-background-mobile@2x.png"), url("../../images/cat-cage-background-mobile@2x.webp"));
     margin: 0;
-
-    &::before {
-      min-height: 285px;
-    }
   }
 }
 
@@ -298,7 +290,7 @@
   line-height: 20px;
   color: $white;
   padding-top: 187px;
-  width: 160px;
+  width: 161px;
   text-align: center;
   position: relative;
 
@@ -309,8 +301,9 @@
     background-image: url("../../icons/icon-gift.svg");
     width: 80px;
     height: 80px;
-    top: 60px;
     left: 40px;
+    top: 29%;
+    transform: translateY(-29%);
   }
 
   @media (min-width: $tablet-width) {
@@ -319,7 +312,8 @@
 
     &::before {
       left: 75px;
-      top: 55px;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 
@@ -331,6 +325,8 @@
 
     &::before {
       left: 45px;
+      top: 35%;
+      transform: translateY(-35%);
     }
   }
 }

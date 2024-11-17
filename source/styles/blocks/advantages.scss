@@ -71,6 +71,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 40px;
+    width: 370px;
 
     &::before {
       display: block;
@@ -112,6 +113,8 @@
     mask-repeat: no-repeat;
     position: relative;
     padding: 68px 63px 53px 53px;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
 
     &--weightless::after,
     &--weightup::after {
@@ -229,19 +232,30 @@
   width: fit-content;
   flex-wrap: wrap;
 
-  &:focus {
-    opacity: 0.3;
-  }
 
   &::after {
     content: "";
     display: block;
     background-image: url("../../icons/stack.svg#icon-raw");
     background-repeat: no-repeat;
-    background-size: 24px 12px;
-    width: 24px;
+    background-size: 32px 12px;
+    background-position: -8px;
+    width: 32px;
     height: 12px;
     margin-left: 15px;
+  }
+
+  &:hover::after {
+    background-position: center;
+  }
+
+  &:focus::after {
+    background-position: center;
+    opacity: 0.3;
+  }
+
+  &:focus {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
@@ -250,6 +264,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: auto;
 
     &::after {
       margin-left: 25px;

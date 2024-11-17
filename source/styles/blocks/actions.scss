@@ -65,7 +65,7 @@
     background-color: $white;
     padding: 0 40px;
     width: fit-content;
-    text-wrap: nowrap;
+    text-wrap: wrap;
     margin-bottom: 65px;
 
     &::after {

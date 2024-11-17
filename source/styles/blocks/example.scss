@@ -132,16 +132,17 @@
     line-height: 37px;
     padding: 15px 57px 20px;
   }
-}
 
-.example__number--current {
-  padding: 15px 23px;
-  text-transform: uppercase;
+  &--current {
+    padding: 15px 23px;
+    text-transform: uppercase;
 
-  @media (min-width: $tablet-width) {
-    padding: 15px 30px 20px;
+    @media (min-width: $tablet-width) {
+      padding: 15px 30px 20px;
+    }
   }
 }
+
 
 .example__discription {
   width: 59px;
@@ -169,14 +170,16 @@
   @media (min-width: $desktop-width) {
     background-color: #eaeaea;
   }
-}
 
-.example__discription--current {
-  @media (min-width: $tablet-width) {
-    left: 9px;
-    width: 125px;
+
+  &--current {
+    @media (min-width: $tablet-width) {
+      left: 9px;
+      width: 125px;
+    }
   }
 }
+
 
 .example__wrap {
   justify-content: center;

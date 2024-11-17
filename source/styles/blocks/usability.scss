@@ -53,6 +53,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 40px 136px;
+    counter-reset: item;
   }
 
   @media (min-width: $desktop-width) {
@@ -66,7 +67,6 @@
   line-height: 18px;
   position: relative;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
 
 
@@ -109,21 +109,19 @@
     flex-flow: column wrap;
     gap: 30px;
     background-size: 136px 280px;
+    position: relative;
 
-    &--leaf {
-      background-image: url("../../icons/background-one.svg");
-    }
-
-    &--powder {
-      background-image: url("../../icons/background-two.svg");
-    }
-
-    &--cutlery {
-      background-image: url("../../icons/background-three.svg");
-    }
-
-    &--clock {
-      background-image: url("../../icons/background-four.svg");
+    &::after {
+      color: $bg-color;
+      counter-increment: item;
+      font-size: 280px;
+      line-height: 280px;
+      content: counter(item);
+      font-family: $secondary-font;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
     }
 
 
