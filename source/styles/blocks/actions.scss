@@ -3,11 +3,11 @@
   padding: 15px 0 42px;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 0 74px;
+    padding: 44px 0 80px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 68px 0 104px;
+    padding: 62px 0 105px;
   }
 }
 
@@ -118,11 +118,11 @@
 .actions__field-subscribe {
   width: 254px;
   text-transform: uppercase;
-  padding: 13px;
   font-size: 20px;
   line-height: 30px;
   color: #444444;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
+  padding: 12px;
   font-family: $secondary-font;
 
   &:hover {

@@ -1,15 +1,7 @@
 .adress {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
-
-  @media (min-width: $tablet-width) {
-    gap: 310px;
-  }
-
-  @media (min-width: $desktop-width) {
-    gap: 80px;
-  }
+  gap: 15px;
 }
 
 .adress__title {
@@ -38,7 +30,6 @@
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 20px;
-    text-align: right;
   }
 }
 
@@ -48,10 +39,10 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+  color: $dark-grey;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    padding-left: 30px;
     display: block;
   }
 }

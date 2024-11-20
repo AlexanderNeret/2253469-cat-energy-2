@@ -15,7 +15,7 @@
     &--bg::before {
       background-image: image-set(url("../../images/background-image-cat-desktop@1x.png"), url("../../images/background-image-cat-desktop@1x.webp"), url("../../images/background-image-cat-desktop@2x.png"), url("../../images/background-image-cat-desktop@2x.webp"));
       background-size: cover;
-      background-position: right;
+      background-position: right center;
       background-repeat: no-repeat;
       content: "";
       position: absolute;

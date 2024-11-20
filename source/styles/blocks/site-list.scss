@@ -55,7 +55,13 @@
       background-color: $basic-green;
       position: absolute;
       width: 100%;
-      margin-top: 5px;
+      margin-top: 8px;
+    }
+
+    @media (min-width: $desktop-width) {
+      &--current::after {
+        margin-top: 5px;
+      }
     }
   }
 
@@ -74,7 +80,7 @@
       background-color: $white;
       position: absolute;
       width: 100%;
-      margin-top: 10px;
+      margin-top: 6px;
     }
   }
 }

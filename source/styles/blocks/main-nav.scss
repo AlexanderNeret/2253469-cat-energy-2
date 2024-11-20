@@ -12,6 +12,7 @@
     text-wrap: nowrap;
     font-size: 18px;
     line-height: 24px;
+    margin-right: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,6 +20,7 @@
     line-height: 30px;
     width: 50%;
     background-color: inherit;
+    padding-top: 9px;
     padding-left: 133px;
     box-sizing: border-box;
   }
